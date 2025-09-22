@@ -14,6 +14,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 public class calculo1 extends AppCompatActivity {
 
     // estructura para conectar las cosas de la interfaz y la clase
@@ -22,8 +24,9 @@ public class calculo1 extends AppCompatActivity {
     private EditText anguloC;
     private EditText distanciaC;
     private TextView resultadoC;
-
     double distancia;
+
+    DecimalFormat formatoDescimal = new DecimalFormat("0.####"); //formato de decimales (4 decimales opcionales)
 
 
     @Override
@@ -47,7 +50,7 @@ public class calculo1 extends AppCompatActivity {
         Intent intent = getIntent();
         if (intent.hasExtra("resultado")) {
             distancia = intent.getDoubleExtra("resultado", 0.0);
-            distanciaC.setText("" +String.format("%.4f",distancia));
+            distanciaC.setText("" + formatoDescimal.format(distancia));
         }
 
     }
@@ -64,7 +67,7 @@ public class calculo1 extends AppCompatActivity {
             resultado = distancia * Math.tan(angulo * (Math.PI / 180));
             resultado += altura;
 
-            resultadoC.setText("Altura del edificio: " + String.format("%.4f", resultado));
+            resultadoC.setText("Altura del edificio: " + formatoDescimal.format(resultado));
 
         } catch (Exception e) {
             Toast.makeText(calculo1.this, "Ingrese datos validos", Toast.LENGTH_LONG).show();

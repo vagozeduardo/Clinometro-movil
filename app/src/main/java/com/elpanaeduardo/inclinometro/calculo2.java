@@ -15,6 +15,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 public class calculo2 extends AppCompatActivity {
     private EditText alturaC;
     private EditText anguloC;
@@ -22,6 +24,8 @@ public class calculo2 extends AppCompatActivity {
     private Button boton;
     double distancia = 0;
 
+
+    DecimalFormat formatoDescimal = new DecimalFormat("0.####"); //formato de decimales (4 decimales opcionales)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +52,7 @@ public class calculo2 extends AppCompatActivity {
             angulo = Double.parseDouble(anguloC.getText().toString());
 
             distancia = altura/Math.tan(angulo*(Math.PI/180));
-            resultadoC.setText("Distancia: "+String.format("%.4f",distancia));
+            resultadoC.setText("Distancia: "+ formatoDescimal.format(distancia));
 
             if (distancia != 0){
                 boton.setEnabled(true);
