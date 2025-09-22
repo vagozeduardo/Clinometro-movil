@@ -1,19 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="0dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
+        android:id="@+id/fondo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hola mundo"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="331dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_pantalla" />
+    <!-- El id de los layout los deje asi:
+     id_layout1_main
+     Donde "id" es el tipo, "_" para separar el tipo con el objeto
+     que en este caso es "layout" y el "1" hace referencia a la pagina,
+     "_", "categoria" si es principal "main" o sucesion de numeros
+     -->
+    <LinearLayout
+        android:id="@+id/id_layout1_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
 
+        >
+
+        <LinearLayout
+            android:id="@+id/id_layout1_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INCLINOMETRO"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gothicbi"
+                android:textSize="34dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_layout1_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+        >
+
+            <Button
+                android:id="@+id/Bt_conDistanciaEdificio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="cambiarPantalla2"
+                android:text="Se conoce la distancia de edificio"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/timesi"/>
+            <Button
+                android:id="@+id/Bt_sinDistanciaEdificio"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="cambiarPantalla3"
+                android:text="Se desconoce la distancia del edificio"
+                android:textColor="@color/black" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_layout_end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/idBt_AcerdaDe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="ACERCA DE"
+                android:textColor="@color/black"
+                android:layout_marginBottom="50dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

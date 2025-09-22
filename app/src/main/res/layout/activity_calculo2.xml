@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pantalla3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculo2">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_pantalla"/>
+
+    <LinearLayout
+        android:id="@+id/id_Layout2_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/id_layout2_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:layout_gravity="end"
+                android:layout_marginBottom="75dp"
+                android:layout_marginRight="15dp"
+                android:onClick="menup3"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/id_layout2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altura"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="35dp"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edificio2" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_layout2_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/idEditText_AlturaP3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Altura"
+                android:textColorHint="@color/white"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/idEditText_AnguloP3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Angulo"
+                android:textColorHint="@color/white"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:id="@+id/idBtn_calcularP3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Calcular distancia al edificio"
+                android:textColor="@color/black"
+                android:onClick="calcularp3"
+                />
+
+            <TextView
+                android:id="@+id/idTxtView_salidaP3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distancia: "
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/idBtn_enviarDatos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Usar distancia"
+                    android:onClick="pantalla1"
+                    android:enabled="false"
+                    />
+
+                <Button
+                    android:id="@+id/idBtn_limpiar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:onClick="borrarp3"
+                    android:text="Limpiar" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
