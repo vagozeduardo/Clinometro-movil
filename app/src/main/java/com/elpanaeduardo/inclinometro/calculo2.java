@@ -39,47 +39,48 @@ public class calculo2 extends AppCompatActivity {
         });
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        alturaC = (EditText) findViewById(R.id.idEditText_AlturaP3);
-        anguloC = (EditText) findViewById(R.id.idEditText_AnguloP3);
-        resultadoC = (TextView) findViewById(R.id.idTxtView_salidaP3);
-        boton = (Button) findViewById(R.id.idBtn_enviarDatos);
+        alturaC =  findViewById(R.id.idEditText_AlturaP3);
+        anguloC =  findViewById(R.id.idEditText_AnguloP3);
+        resultadoC = findViewById(R.id.idTxtView_salidaP3);
+        boton = findViewById(R.id.idBtn_enviarDatos);
     }
 
-    public void calcularp3(View v){
+    public void calcularp3(View v) {
         try {
-            double altura,angulo;
+            double altura, angulo;
             altura = Double.parseDouble(alturaC.getText().toString());
             angulo = Double.parseDouble(anguloC.getText().toString());
 
-            distancia = altura/Math.tan(angulo*(Math.PI/180));
-            resultadoC.setText("Distancia: "+ formatoDescimal.format(distancia));
-
-            if (distancia != 0){
+            // validacion para evitar angulos sin sentido
+            if (angulo > 0 && angulo < 90) {
+                distancia = altura / Math.tan(angulo * (Math.PI / 180));
+                resultadoC.setText("Distancia: " + formatoDescimal.format(distancia));
                 boton.setEnabled(true);
+            } else {
+                Toast.makeText(this, "El ángulo debe ser mayor a 0° y menor a 90°", Toast.LENGTH_SHORT).show();
             }
 
-
-        }catch (Exception e){
-            Toast.makeText(calculo2.this, "hay un error ._.", Toast.LENGTH_LONG).show();
+        } catch (Exception e) {
+            Toast.makeText(calculo2.this, "Llena todos los campos", Toast.LENGTH_LONG).show();
         }
 
     }
 
 
-    public void borrarp3(View v){
+    public void borrarp3(View v) {
         alturaC.setText("");
         anguloC.setText("");
         resultadoC.setText("Distancia: ");
     }
 
-    public void menup3(View v){
+    public void menup3(View v) {
         Intent I = new Intent(calculo2.this, MainActivity.class);
         startActivity(I);
     }
 
-    public void pantalla1(View v){
+    public void pantalla1(View v) {
         Intent I = new Intent(calculo2.this, calculo1.class);
-        I.putExtra("resultado",distancia);
+        I.putExtra("resultado", distancia);
         startActivity(I);
     }
 

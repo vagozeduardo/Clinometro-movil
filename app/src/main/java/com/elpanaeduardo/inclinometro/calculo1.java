@@ -64,13 +64,18 @@ public class calculo1 extends AppCompatActivity {
             angulo = Double.parseDouble(anguloC.getText().toString());
             distancia = Double.parseDouble(distanciaC.getText().toString());
 
-            resultado = distancia * Math.tan(angulo * (Math.PI / 180));
-            resultado += altura;
+            //validadcion para evitar angulos sin sentido
+            if (angulo >= 90){
+                Toast.makeText(calculo1.this, "Ingresa una ángulo menor a 90°",Toast.LENGTH_LONG).show();
+            }else {
+                resultado = distancia * Math.tan(angulo * (Math.PI / 180));
+                resultado += altura;
 
-            resultadoC.setText("Altura del edificio: " + formatoDescimal.format(resultado));
+                resultadoC.setText("Altura del edificio: " + formatoDescimal.format(resultado));
+            }
 
         } catch (Exception e) {
-            Toast.makeText(calculo1.this, "Ingrese datos validos", Toast.LENGTH_LONG).show();
+            Toast.makeText(calculo1.this, "Llena todos los campos", Toast.LENGTH_LONG).show();
         }
     }
 

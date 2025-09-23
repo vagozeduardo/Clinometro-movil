@@ -5,6 +5,7 @@
     android:id="@+id/pantalla3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".calculo2">
 
 
@@ -81,7 +82,7 @@
                 android:textColorHint="@color/white"
                 android:layout_gravity="center"
                 android:textAlignment="center"
-                android:inputType="numberDecimal"
+                android:inputType="numberDecimal|number"
                 android:textColor="@color/white"/>
             <EditText
                 android:id="@+id/idEditText_AnguloP3"
@@ -92,7 +93,7 @@
                 android:hint="Angulo"
                 android:textColorHint="@color/white"
                 android:textAlignment="center"
-                android:inputType="numberDecimal"
+                android:inputType="numberDecimal|number"
                 android:textColor="@color/white"
                 />
 
