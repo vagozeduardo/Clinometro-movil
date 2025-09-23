@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">Inclinometro</string>
+    <string name="app_name">Clinometro</string>
+    <string name="mensaje_autor"><b> A T T E.</b><br/>Laboratorio De Desarrollo De Software</string>
+    <string name="acercade_definicion">Un clinómetro es una herramienta que se usa para medir qué tan inclinado está algo.Piensa en él como un transportador de ángulos, pero en lugar de medir ángulos en papel, mide la inclinación de una superficie o un objeto en el mundo real, como una colina, un muro o un edificio.</string>
+    <string name="acercade_proposito">Esta aplicacion fue creado con la idea de ayudar en los calculos y evitar realizarlos de forma manual en una calculadora, de esta forma evitamos realizar mas actividades y se intenta llegar a calculos mas precisos.</string>
 </resources>

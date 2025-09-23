@@ -34,15 +34,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="100dp"
             >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="INCLINOMETRO"
+                android:text="CLINOMETRO"
                 android:textColor="@color/white"
-                android:fontFamily="@font/gothicbi"
+                android:fontFamily="@font/timesbd"
                 android:textSize="34dp"
                 />
 
@@ -65,14 +65,14 @@
                 android:onClick="cambiarPantalla2"
                 android:text="Se conoce la distancia de edificio"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                android:fontFamily="@font/timesi"/>
+                android:fontFamily="@font/timesbd"/>
             <Button
                 android:id="@+id/Bt_sinDistanciaEdificio"
                 android:layout_marginTop="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="cambiarPantalla3"
+                android:fontFamily="@font/timesbd"
                 android:text="Se desconoce la distancia del edificio"
                 android:textColor="@color/black" />
 
@@ -92,9 +92,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/timesbd"
+                android:onClick="cambiarpantalla_acercade"
                 android:text="ACERCA DE"
                 android:textColor="@color/black"
-                android:layout_marginBottom="50dp"/>
+                android:layout_marginLeft="15dp"/>
 
 
         </LinearLayout>

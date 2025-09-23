@@ -5,5 +5,5 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Inclinometro" parent="Base.Theme.Inclinometro" />
+    <style name="Theme.clinometro" parent="Base.Theme.Inclinometro" />
 </resources>

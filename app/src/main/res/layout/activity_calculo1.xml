@@ -35,6 +35,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Menu"
+                android:fontFamily="@font/timesbd"
+                android:textColor="@color/black"
                 android:layout_gravity="end"
                 android:layout_marginBottom="75dp"
                 android:layout_marginRight="15dp"
@@ -80,6 +82,7 @@
                 android:ems="10"
                 android:hint="Altura"
                 android:textColorHint="@color/white"
+                android:fontFamily="@font/times"
                 android:layout_gravity="center"
                 android:textAlignment="center"
                 android:inputType="numberDecimal|number"
@@ -92,6 +95,7 @@
                 android:ems="10"
                 android:hint="Angulo"
                 android:textColorHint="@color/white"
+                android:fontFamily="@font/times"
                 android:textAlignment="center"
                 android:inputType="numberDecimal|number"
                 android:textColor="@color/white"
@@ -104,6 +108,7 @@
                 android:layout_gravity="center"
                 android:ems="10"
                 android:hint="Distancia"
+                android:fontFamily="@font/times"
                 android:textColorHint="@color/white"
                 android:textAlignment="center"
                 android:inputType="numberDecimal|number"
@@ -119,8 +124,7 @@
                 android:onClick="calcular"
                 android:text="Calcular altura del edificio"
                 android:textColor="@color/black"
-
-
+                android:fontFamily="@font/timesbd"
                 />
 
             <TextView
@@ -129,18 +133,23 @@
                 android:layout_height="wrap_content"
                 android:text="Altura del edificio: "
                 android:textColor="@color/white"
+                android:fontFamily="@font/times"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
 
                 />
-            <Button
+            <TextView
                 android:id="@+id/idBtn_limpiar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
                 android:layout_gravity="end"
                 android:text="Limpiar"
                 android:layout_marginRight="15dp"
                 android:onClick="borrar"
+                android:textSize="20dp"
+                android:background="@color/black"
+                android:fontFamily="@font/times"
+                android:textColor="@color/white"
                 />
 
         </LinearLayout>

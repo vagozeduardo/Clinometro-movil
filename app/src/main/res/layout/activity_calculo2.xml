@@ -36,20 +36,17 @@
                 android:layout_height="wrap_content"
                 android:text="Menu"
                 android:layout_gravity="end"
-                android:layout_marginBottom="75dp"
                 android:layout_marginRight="15dp"
                 android:onClick="menup3"
+                android:fontFamily="@font/timesbd"
                 />
         </LinearLayout>
-
-
 
         <LinearLayout
             android:id="@+id/id_layout2_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-
             >
             <TextView
                 android:layout_width="wrap_content"
@@ -62,7 +59,6 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/edificio2" />
-
 
         </LinearLayout>
 
@@ -83,7 +79,8 @@
                 android:layout_gravity="center"
                 android:textAlignment="center"
                 android:inputType="numberDecimal|number"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white"
+                android:fontFamily="@font/times"/>
             <EditText
                 android:id="@+id/idEditText_AnguloP3"
                 android:layout_width="wrap_content"
@@ -95,6 +92,7 @@
                 android:textAlignment="center"
                 android:inputType="numberDecimal|number"
                 android:textColor="@color/white"
+                android:fontFamily="@font/times"
                 />
 
             <Button
@@ -106,6 +104,7 @@
                 android:text="Calcular distancia al edificio"
                 android:textColor="@color/black"
                 android:onClick="calcularp3"
+                android:fontFamily="@font/timesbd"
                 />
 
             <TextView
@@ -116,33 +115,43 @@
                 android:textColor="@color/white"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-
+                android:fontFamily="@font/times"
+                android:textSize="18dp"
                 />
+
+            <Button
+                android:id="@+id/idBtn_enviarDatos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usar distancia"
+                android:layout_gravity="center"
+                android:onClick="pantalla1"
+                android:layout_marginTop="20dp"
+                android:enabled="false"
+                android:fontFamily="@font/timesbd"
+                />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="15dp"
-                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:gravity="right"
                 >
 
-                <Button
-                    android:id="@+id/idBtn_enviarDatos"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:text="Usar distancia"
-                    android:onClick="pantalla1"
-                    android:enabled="false"
-                    />
 
-                <Button
+                <TextView
                     android:id="@+id/idBtn_limpiar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="100dp"
+                    android:layout_width="75dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
                     android:onClick="borrarp3"
-                    android:text="Limpiar" />
+                    android:text="Limpiar"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:background="@color/white"
+                    android:fontFamily="@font/times"/>
 
             </LinearLayout>
 
