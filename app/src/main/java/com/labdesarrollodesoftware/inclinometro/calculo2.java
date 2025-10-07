@@ -1,4 +1,4 @@
-package com.elpanaeduardo.inclinometro;
+package com.labdesarrollodesoftware.inclinometro;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;

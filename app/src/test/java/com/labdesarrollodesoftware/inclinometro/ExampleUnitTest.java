@@ -1,4 +1,4 @@
-package com.elpanaeduardo.inclinometro;
+package com.labdesarrollodesoftware.inclinometro;
 
 import org.junit.Test;
 

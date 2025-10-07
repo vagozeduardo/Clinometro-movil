@@ -47,18 +47,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginTop="30dp"
             >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Altura"
-                android:layout_gravity="bottom"
-                android:layout_marginBottom="35dp"
-                android:textColor="@color/white"/>
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/edificio2" />
+                android:src="@drawable/calculo2"
+                android:background="@color/transparente2"/>
 
         </LinearLayout>
 
@@ -75,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Altura"
-                android:textColorHint="@color/white"
+                android:textColorHint="@color/green"
                 android:layout_gravity="center"
                 android:textAlignment="center"
                 android:inputType="numberDecimal|number"
@@ -88,7 +83,7 @@
                 android:layout_gravity="center"
                 android:ems="10"
                 android:hint="Angulo"
-                android:textColorHint="@color/white"
+                android:textColorHint="@color/red"
                 android:textAlignment="center"
                 android:inputType="numberDecimal|number"
                 android:textColor="@color/white"

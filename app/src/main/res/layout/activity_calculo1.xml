@@ -53,17 +53,11 @@
             android:orientation="horizontal"
 
             >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Altura"
-                android:layout_gravity="bottom"
-                android:layout_marginBottom="35dp"
-                android:textColor="@color/white"/>
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/edificio1" />
+                android:src="@drawable/image1"
+                android:background="@color/transparente2"/>
 
 
         </LinearLayout>
@@ -74,46 +68,58 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/transparente3"
+                >
 
-            <EditText
-                android:id="@+id/idEditText_Altura"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Altura"
-                android:textColorHint="@color/white"
-                android:fontFamily="@font/times"
-                android:layout_gravity="center"
-                android:textAlignment="center"
-                android:inputType="numberDecimal|number"
-                android:textColor="@color/white"/>
-            <EditText
-                android:id="@+id/idEditText_Angulo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:ems="10"
-                android:hint="Angulo"
-                android:textColorHint="@color/white"
-                android:fontFamily="@font/times"
-                android:textAlignment="center"
-                android:inputType="numberDecimal|number"
-                android:textColor="@color/white"
-                />
+                <EditText
+                    android:id="@+id/idEditText_Altura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Altura"
+                    android:textColorHint="@color/green"
+                    android:fontFamily="@font/times"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal|number"
+                    android:textColor="@color/white"/>
+                <EditText
+                    android:id="@+id/idEditText_Angulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:hint="Angulo"
+                    android:textColorHint="@color/red"
+                    android:fontFamily="@font/times"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal|number"
+                    android:textColor="@color/white"
+                    />
 
-            <EditText
-                android:id="@+id/idEditText_Distancia"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:ems="10"
-                android:hint="Distancia"
-                android:fontFamily="@font/times"
-                android:textColorHint="@color/white"
-                android:textAlignment="center"
-                android:inputType="numberDecimal|number"
-                android:textColor="@color/white"
-                />
+                <EditText
+                    android:id="@+id/idEditText_Distancia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:hint="Distancia"
+                    android:fontFamily="@font/times"
+                    android:textColorHint="@color/blue"
+                    android:textAlignment="center"
+                    android:inputType="numberDecimal|number"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+
 
             <Button
                 android:id="@+id/idBtn_calcular"
@@ -150,6 +156,7 @@
                 android:background="@color/white"
                 android:fontFamily="@font/times"
                 android:textColor="@color/black"
+                android:gravity="center"
                 />
 
         </LinearLayout>

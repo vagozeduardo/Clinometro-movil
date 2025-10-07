@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.elpanaeduardo.inclinometro"
+    namespace = "com.labdesarrollodesoftware.inclinometro"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.elpanaeduardo.inclinometro"
+        applicationId = "com.labdesarrollodesoftware.inclinometro"
         minSdk = 32
         targetSdk = 36
         versionCode = 1

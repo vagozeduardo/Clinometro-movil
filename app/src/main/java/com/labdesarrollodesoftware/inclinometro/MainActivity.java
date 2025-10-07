@@ -1,4 +1,4 @@
-package com.elpanaeduardo.inclinometro;
+package com.labdesarrollodesoftware.inclinometro;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -11,15 +11,17 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class acercade extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        setContentView(R.layout.activity_acercade);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.acercade), (v, insets) -> {
+        setContentView(R.layout.activity_main);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -28,9 +30,23 @@ public class acercade extends AppCompatActivity {
 
     }
 
-    public void menuPrincipal(View v) {
-        Intent Intent = new Intent(acercade.this, MainActivity.class);
+
+
+    public void cambiarPantalla2(View v){
+        Intent Intent = new Intent(MainActivity.this, calculo1.class);
         startActivity(Intent);
     }
+
+
+    public void cambiarPantalla3(View v){
+        Intent i = new Intent(MainActivity.this, calculo2.class);
+        startActivity(i);
+    }
+
+    public void cambiarpantalla_acercade(View view){
+        Intent i = new Intent(MainActivity.this, acercade.class);
+        startActivity(i);
+    }
+
 
 }

@@ -74,7 +74,8 @@
                 android:onClick="cambiarPantalla3"
                 android:fontFamily="@font/timesbd"
                 android:text="Se desconoce la distancia del edificio"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                />
 
 
 
