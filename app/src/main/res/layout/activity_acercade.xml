@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/acercade"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/acercade"
     android:background="@color/black"
     tools:context=".acercade">
 
@@ -12,69 +12,79 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/fondo_pantalla" />
+        android:src="@drawable/fondoversion2" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
         android:orientation="vertical"
-        android:layout_marginTop="155dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/timesbd"
-            android:text="¿QUE ES EL CLINOMETRO?"
-            android:textColor="@color/white" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="15dp"
-            android:fontFamily="@font/times"
-            android:justificationMode="inter_word"
-            android:text="@string/acercade_definicion"
-            android:textColor="@color/white" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="15dp"
-            android:fontFamily="@font/times"
-            android:justificationMode="inter_word"
-            android:text="@string/acercade_proposito"
-            android:textColor="@color/white" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="15dp"
-            android:text="A T T E."
-            android:textColor="@color/white"
-            android:fontFamily="@font/timesbd"
-            android:gravity="center"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="15dp"
-            android:fontFamily="@font/times"
-            android:text="Laboratorio De Desarrollo De Software"
-            android:textColor="@color/white"
-            android:gravity="center"/>
+        android:gravity="center"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@color/transparente">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/timesbd"
+                android:text="¿QUE ES EL CLINOMETRO?"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="@font/times"
+                android:justificationMode="inter_word"
+                android:text="@string/acercade_definicion"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="@font/times"
+                android:justificationMode="inter_word"
+                android:text="@string/acercade_proposito"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="@font/timesbd"
+                android:gravity="center"
+                android:text="A T T E."
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="@font/times"
+                android:gravity="center"
+                android:text="Laboratorio De Desarrollo De Software"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp"
             >
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
-                android:layout_marginTop="200dp"
                 android:layout_marginRight="20dp"
                 android:fontFamily="@font/timesbd"
                 android:onClick="menuPrincipal"

@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:padding="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/fondo_pantalla" />
+        android:src="@drawable/fondoversion2" />
     <!-- El id de los layout los deje asi:
      id_layout1_main
      Donde "id" es el tipo, "_" para separar el tipo con el objeto
