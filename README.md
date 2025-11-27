@@ -22,7 +22,7 @@ lograr de entender.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 | Categoría               | Tecnología       | Versión            |
 |--------------------------|-----------------|--------------------|
 | **Lenguaje Principal**   | Java            | JDK  21.0.8        |
